@@ -1,4 +1,4 @@
 const App = () => {
-  return <h2>mixmaster starter</h2>;
+  return <h2>mixmaster</h2>;
 };
 export default App;
