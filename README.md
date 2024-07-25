@@ -1,6 +1,7 @@
 ## MixMaster App
 
 An app where users can search for drinks and find detailed information about specific cocktails.
+The project aims to enhance skills in React development by focusing on effective data fetching and navigation.
 
 ### Project goals:
 
@@ -8,7 +9,7 @@ An app where users can search for drinks and find detailed information about spe
 - Learn how to work with the React Router DOM library, which enables seamless navigation and routing in React applications. This allows for the easy creation of multi-page experiences and handling different components based on specific URLs.
 - Learn how to use the React Router DOM library alongside the React Query Library to cache requests. This setup optimizes the application's performance and improves the user experience.
 
-This project aims to enhance skills in React development by focusing on effective data fetching and navigation.
+This project is part of John Smilga's React course, which I completed to enhance my skills in React development. For more information about the course, visit [John Smilga's Website](https://johnsmilga.com)
 
 #### Figma File
 
