@@ -1,3 +1,15 @@
+## MixMaster App
+
+An app where users can search for drinks and find detailed information about specific cocktails.
+
+### Project goals:
+
+- Utilize the popular Cocktail DB API to fetch and display drink data.
+- Learn how to work with the React Router DOM library, which enables seamless navigation and routing in React applications. This allows for the easy creation of multi-page experiences and handling different components based on specific URLs.
+- Learn how to use the React Router DOM library alongside the React Query Library to cache requests. This setup optimizes the application's performance and improves the user experience.
+
+This project aims to enhance skills in React development by focusing on effective data fetching and navigation.
+
 #### Figma File
 
 [MixMaster Design](https://www.figma.com/community/file/1255860657910062828)
