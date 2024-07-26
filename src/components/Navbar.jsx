@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom"
+import StyleWrapper from '../assets/styleWrappers/Navbar';
 
 const Navbar = () => {
     return (
-        <nav>
+        <StyleWrapper>
             <div className="nav-center">
                 <span className="logo">MixMaxter</span>
                 <div className="nav-links">
@@ -17,13 +18,13 @@ const Navbar = () => {
                         About
                     </NavLink >
                     <NavLink
-                        className="newsletter"
-                        to="/">
+                        className="nav-link"
+                        to="/newsletter">
                         Newsletter
                     </NavLink >
                 </div>
             </div>
-        </nav>
+        </StyleWrapper>
     )
 }
 
