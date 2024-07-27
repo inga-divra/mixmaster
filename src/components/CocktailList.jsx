@@ -9,10 +9,10 @@ const CocktailList = ({ drinks }) => {
     }
 
     const formattedDrinks = drinks.map((item) => {
-        const { idDrinks, strDrink, strDrinkThumb, strAlcoholic, strGlass } = item
+        const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass } = item
 
         return {
-            id: idDrinks,
+            id: idDrink,
             name: strDrink,
             image: strDrinkThumb,
             info: strAlcoholic,
