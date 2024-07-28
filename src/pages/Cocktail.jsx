@@ -1,4 +1,4 @@
-import { useLoaderData, Link } from "react-router-dom"
+import { useLoaderData, Link, Navigate } from "react-router-dom"
 import axios from "axios"
 import StyleWrapper from "../assets/styleWrappers/CocktailPage"
 
@@ -17,7 +17,11 @@ export const loader = async ({ params }) => {
 
 const Cocktail = () => {
     const { id, data } = useLoaderData()
+
+    if (!data) return <Navigate to='/' />
+
     const singleDrink = data.drinks[0]
+
     const {
         strDrink: name,
         strDrinkThumb: image,
