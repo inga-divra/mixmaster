@@ -26,7 +26,11 @@ const Cocktail = () => {
         strGlass: glass,
         strInstructions: instructions
     } = singleDrink
-    console.log(singleDrink);
+
+    const validIngredients = Object.keys(singleDrink).filter(
+        (key) => key.startsWith("strIngredient") &&
+            singleDrink[key] !== null).map((key) => singleDrink[key])
+
     return <StyleWrapper>
         <header>
             <Link className="btn" to="/">
@@ -60,6 +64,16 @@ const Cocktail = () => {
                         glass:
                     </span>
                     {glass}
+                </p>
+                <p>
+                    <span className="drink-data">
+                        ingredients:
+                    </span>
+                    {validIngredients.map((item, index) => {
+                        return <span className="ing" key={item}>
+                            {item}{index < validIngredients.length - 1 ? ',' : ''}
+                        </span>
+                    })}
                 </p>
                 <p>
                     <span className="drink-data">
