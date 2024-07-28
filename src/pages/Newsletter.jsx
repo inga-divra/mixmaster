@@ -1,8 +1,14 @@
 import { Form } from 'react-router-dom'
 
 
+export const action = async ({ request }) => {
+    console.log(request)
+    return null
+}
+
+
 const Newsletter = () => {
-    return <Form className="form">
+    return <Form className="form" method='POST'>
         <h4 style={{ textAlign: 'center', marginBottom: '2rem' }}>
             our newsletter
         </h4>
