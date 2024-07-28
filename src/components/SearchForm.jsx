@@ -1,7 +1,7 @@
 import StyleWrapper from '../assets/styleWrappers/SearchForm'
 import { Form, useNavigation } from 'react-router-dom'
 
-const SearchForm = () => {
+const SearchForm = ({ searchTerm }) => {
     const navigation = useNavigation()
     const isSubmitting = navigation.state === 'submitting'
 
@@ -11,7 +11,7 @@ const SearchForm = () => {
                 className='form-input'
                 type='search'
                 name='search'
-                defaultValue='fresh lime' />
+                defaultValue={searchTerm} />
             <button
                 className='btn'
                 type='submit'
