@@ -1,4 +1,4 @@
-## MixMaster App
+## MixMaster App https://mixmaster-ingady.netlify.app/
 
 An app where users can search for drinks and find detailed information about specific cocktails.
 The project aims to enhance skills in React development by focusing on effective data fetching and navigation.
@@ -10,6 +10,36 @@ The project aims to enhance skills in React development by focusing on effective
 - Learn how to use the React Router DOM library alongside the React Query Library to cache requests. This setup optimizes the application's performance and improves the user experience.
 
 This project is part of John Smilga's React course, which I completed to enhance my skills in React development. For more information about the course, visit [John Smilga's Website](https://johnsmilga.com)
+
+## Key Points Learned from MixMaster Project:
+
+### React Router DOM Integration:
+
+- Implemented dynamic routing and navigation to create a multi-page experience.
+- Utilized route parameters and query parameters for more flexible data handling.
+- Leveraged loaders and actions for data fetching and mutations within routes.
+- Managed nested routes and handled errors gracefully using custom error components.
+
+### React Query Integration:
+
+- Integrated React Query to optimize data fetching and caching.
+- Used useQuery to handle API requests and manage query states.
+- Implemented QueryClient to configure global query settings, including caching duration.
+- Prefetched data using queryClient.ensureQueryData to improve performance and user experience.
+- Incorporated React Query Devtools for easier debugging and monitoring of query states.
+
+### Enhanced Form Handling:
+
+- Created forms using react-router-dom's Form component for built-in support with loaders and actions.
+- Managed form submission states using the useNavigation hook.
+- Implemented error handling for form submissions and displayed feedback using react-toastify.
+
+### API Integration:
+
+Connected with TheCocktailDB API to fetch cocktail data.
+Implemented search functionality to retrieve and display cocktails based on user queries.
+Fetched detailed information for individual cocktails using route parameters.
+
 
 #### Figma File
 
